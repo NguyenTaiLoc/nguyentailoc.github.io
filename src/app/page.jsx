@@ -7,13 +7,13 @@ import {useState} from 'react';
 export default function Home() {
   const [notes, setNotes] = useState([]);
 
-  function addNote(newNote: any) {
-    setNotes((prevNotes: any) => {
+  function addNote(newNote) {
+    setNotes((prevNotes) => {
       return [...prevNotes, newNote];
     });
   }
 
-  function deleteNote(id: any) {
+  function deleteNote(id) {
     setNotes(prevNotes => {
       return prevNotes.filter((noteItem, index) => {
         return index !== id;

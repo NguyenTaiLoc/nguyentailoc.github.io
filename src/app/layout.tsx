@@ -23,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Keeper App</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
       </head>
       <body className={inter.className}>
         <Header />
